@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phone Camera Share</title>
+
+  <style>
+    body {
+    background: linear-gradient(aqua, cyan);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    }
+
+
+
+
+    .h{
+        color: white;
+        font-size: 50px;
+        text-decoration: underline;
+
+    }
+
+    .code{
+        height: 50px;
+        width: 400px;
+        margin-top: 150px;
+        color: black;
+        font-size: 30px;
+        font-weight: bold;
+        align-items: center;
+        text-align: center;
+        border: 0.5px solid black;
+        background: transparent;
+        border-radius: 90px;
+
+    }
+
+    .join{
+        margin-top: 60px;
+        height: 35px;
+        width: 170px;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        background: transparent;
+        border:transparent
+    }
+  </style>
+</head>
+<body>
+    <center>
+  <h2 class="h">Enter Room Code</h2>
+  </center>
+
+  <input class ="code" id="room" placeholder="Room Code" />
+  <button class = "join" onclick="joinRoom()">Join</button>
+  <video id="localVideo" autoplay playsinline muted></video>
+  <video id="remoteVideo" autoplay playsinline></video>
+   </center>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
